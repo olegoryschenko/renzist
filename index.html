@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentiz</title>
+    <link rel="stylesheet" href="./scss/reset.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./js/swiper.js"></script>
+    <script defer src="./js/dropdown.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+   <header class="header">
+    <div class="header__container">
+        <a class="header__logo"><img src="./img/header-logo.svg" alt="logo" href="#"></a>
+        <div class="header__navigation">
+            <div class="menu__overfloy"></div>
+            <nav class="header__menu menu">
+                <ul class="menu__item">
+                    <li class="menu__list-logo">
+                        <a class="header__logo-menu"><img src="./img/header-logo.svg" alt="logo" href="#"></a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link active" href="#!">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link" href="#!">About us</a>
+                    </li> <li class="menu__list">
+                        <a class="menu__link" href="#!">Buying</a>
+                    </li> <li class="menu__list">
+                        <a class="menu__link" href="#!">Renting</a>
+                    </li> <li class="menu__list">
+                        <a class="menu__link" href="#!">Selling</a>
+                    </li> <li class="menu__list">
+                        <a class="menu__link" href="#!">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="login header__btn">Login</button>
+                <button class="register header__btn">Sign Up</button>
+            </div>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+   </header>
+   <main class="main">
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title" data-aos="fade-left">Perfect way to buy and sell a home</h1>
+                <p class="hero__text text">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui pellentesque. Ac, gravida in eget non amet eget purus non.</p>
+                <div class="hero__filter filter" data-aos="fade-right">
+                    <div class="filter__block block-filter" >
+                        <div class="block-filter__button">
+                            <div class="block-filter__header">
+                                <div class="block-filter__type" data-tab="tab-1">Purpose</div>
+                                <div class="block-filter__icon">
+                                </div>
+                            </div>
+                            <div class="block-filter__value">buy</div>
+                            <div class="block-filter__dropdown "  id="tab-1">
+                                <div class="block-filter__item">Buy</div>
+                                <div class="block-filter__item">Sell</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__block block-filter">
+                        <div class="block-filter__button">
+                            <div class="block-filter__header" data-tab="tab-2">
+                                <div class="block-filter__type" data-tab="tab-2">Location</div>
+                                <div class="block-filter__icon">
+                                </div>
+                            </div>
+                            <div class="block-filter__value">Toronto, Canada</div>
+                            <div class="block-filter__dropdown " id="tab-2">
+                                <div class="block-filter__item">Australia</div>
+                                <div class="block-filter__item">Ukraine</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__block block-filter">
+                        <div class="block-filter__button">
+                            <div class="block-filter__header">
+                                <div class="block-filter__type" data-tab="tab-3">Type</div>
+                                <div class="block-filter__icon">
+                                </div>
+                            </div>
+                            <div class="block-filter__value">Industrial home</div>
+                        </div>
+                        <div class="block-filter__dropdown " id="tab-3">
+                            <div class="block-filter__item">Buy</div>
+                            <div class="block-filter__item">Sell</div>
+                        </div>
+                    </div>
+                    <div class="filter__btn">
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="./img/hero.jpg" alt="House">
+            </div>
+            <img class="hero-deco" src="./img/hero__decor.svg" alt="Decor">
+        </div>
+    </section>
+    <section class="featured">
+        <div class="featured__container">
+            <h2 class="featured__title title">Featured In</h2>
+            <div class="featured__box">
+                <div class="featured__item">
+                    <img src="./img/logos/vin-tage.svg" alt="logos">
+                </div>
+                <div class="featured__item">
+                    <img src="./img/logos/violet.svg" alt="logos">
+                </div><div class="featured__item">
+                    <img src="./img/logos/ceathes.svg" alt="logos">
+                </div><div class="featured__item">
+                    <img src="./img/logos/creater-fav.svg" alt="logos">
+                </div>
+                <div class="featured__item">
+                    <img src="./img/logos/lavender-agency.svg" alt="logos">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="popular__container">
+            <h2 class="popular__title title">Popular Residence</h2>
+            <div class="popular__slider">
+        <div class="swiper popular-slider">
+            <div class="swiper__arrow ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="swiper-wrapper">
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-1.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Aliva Priva Jalvin</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-2.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Hard line orchar</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-3.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Allpine lenevote</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-1.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Aliva Priva Jalvin</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-2.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Hard line orchar</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+             <div class="swiper-slide popular-slide">
+                <div class="popular-slide__thumb active">
+                    <img src="./img/sliders/slider-3.jpg" alt="slide-1">
+                </div>
+                <div class="popular-slide__content">
+                    <h3 class="popular-slide__title">Allpine lenevote</h3>
+                    <p class="popular-slide__text text">1087 Pin Oak Drive, Clinton, USA</p>
+                </div>
+                <div class="popular-slide__labels">
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bed.svg" alt="bed">
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="popular-slide__label">
+                        <img src="./img/icons/slider_bath.svg" alt="bath">
+                        <span>2 Bath</span>
+                    </div> <div class="popular-slide__label">
+                        <img src="./img/icons/slider_vector-square.svg" alt="sqft">
+                        <span>1203 Sqft.</span>
+                    </div>
+                </div>
+             </div>
+        </div>  
+        <div class="slider__btns">
+            <div class="popular-slider__btn popular-slider-prev swiper-button-prev"></div>
+            <div class="popular-slider__btn popular-slider-next swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="popular__btn-link">
+        <a class="popular__link" href="#">
+            View all properties
+        </a> 
+
+    </div>
+            </div>
+    </section>
+    <section class="why">
+        <div class="why__container">
+        <h2 class="title why__title">Why to choose us</h2>
+        <div class="why__items">
+            <div class="why__item item-why">
+                <div class="item-why__img">
+                    <svg width="241" height="242" viewBox="0 0 241 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M137.686 160.43L205.86 228.604" stroke="var(--accent-color)" stroke-width="16"/>
+                        <path d="M159.885 138.231L228.058 206.405" stroke="var(--accent-color)" stroke-width="16"/>
+                        <path d="M228.058 206.405C231.002 209.349 232.656 213.341 232.656 217.504C232.656 221.667 231.002 225.66 228.058 228.604" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M205.86 228.603C208.803 231.547 212.796 233.201 216.959 233.201C221.122 233.201 225.115 231.547 228.058 228.603" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M78.9388 8.8483C88.2148 8.8483 97.3999 10.6753 105.97 14.2251C114.54 17.7749 122.327 22.9779 128.886 29.537C135.445 36.0961 140.648 43.8829 144.198 52.4528C147.747 61.0227 149.574 70.2078 149.574 79.4838C149.574 88.7598 147.747 97.945 144.197 106.515C140.648 115.085 135.445 122.872 128.886 129.431C122.327 135.99 114.54 141.193 105.97 144.743C97.3999 148.292 88.2148 150.119 78.9388 150.119C60.2051 150.119 42.2386 142.677 28.9919 129.431C15.7452 116.184 8.30322 98.2176 8.30322 79.4838C8.30322 70.2078 10.1303 61.0227 13.68 52.4528C17.2298 43.8829 22.4328 36.0961 28.9919 29.537C35.551 22.9779 43.3378 17.7749 51.9077 14.2251C60.4776 10.6753 69.6628 8.8483 78.9388 8.8483Z" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M137.686 160.43L159.885 138.231" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M148.785 149.331L128.886 129.431" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M156.634 179.378L178.833 157.179" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M78.9387 40.2419C89.3463 40.2419 99.3277 44.3763 106.687 51.7356C114.046 59.0949 118.181 69.0763 118.181 79.4839" stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>         
+                </div>
+                <h3 class="item-why__title">Easy to find</h3>
+                <p class="item-why__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+            </div>
+            <div class="why__item item-why">
+                <div class="item-why__img">
+                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9673 4.95483C14.4759 4.57794 13.8168 4.16499 12.8785 3.5788L11.8087 2.91058C11.0167 2.4156 10.4694 2.07478 10.0147 1.85204C9.5749 1.63708 9.27933 1.56213 9.00003 1.56283C8.72072 1.56213 8.42515 1.63708 7.98533 1.85204C7.53066 2.07478 6.98406 2.4149 6.1914 2.91058L5.12225 3.57809C4.18321 4.16499 3.52419 4.57794 3.03275 4.95483C2.55333 5.32111 2.28039 5.62092 2.09513 5.95609C1.90916 6.29055 1.80026 6.68087 1.74299 7.28121C1.6843 7.89851 1.68288 8.67633 1.68288 9.78366L1.68289 12.3717C1.68289 14.2936 1.6843 15.6597 1.82431 16.6963C1.96007 17.7117 2.21675 18.2979 2.64455 18.7257C3.07306 19.1542 3.65854 19.4102 4.67465 19.5467C5.71056 19.686 7.07811 19.6874 9.00003 19.6874C10.9234 19.6874 12.2895 19.686 13.3261 19.5474C14.3408 19.4095 14.927 19.1542 15.3555 18.7257C15.7833 18.2979 16.0393 17.7124 16.1757 16.6963C16.3158 15.6597 16.3172 14.2922 16.3172 12.3703L16.3172 9.78224C16.3172 8.67633 16.3158 7.89851 16.2578 7.28191C16.1998 6.68087 16.0909 6.29055 15.9049 5.95609C15.7197 5.62092 15.446 5.32181 14.968 4.95553M15.8809 3.76547C16.4551 4.20529 16.8977 4.65218 17.2173 5.22918C17.5376 5.80689 17.6819 6.41924 17.7512 7.13908C17.8176 7.83629 17.8176 8.68481 17.8176 9.74689L17.8176 12.4282C17.8176 14.2809 17.8176 15.7488 17.6621 16.8972C17.5044 18.0787 17.1699 19.034 16.4169 19.7871C15.6631 20.5409 14.7078 20.8753 13.5269 21.0337C12.3779 21.1886 10.9106 21.1893 9.0573 21.1886H8.94416C7.09154 21.1886 5.62359 21.1886 4.47525 21.033C3.29367 20.8753 2.33767 20.5402 1.5846 19.7871C0.831529 19.034 0.497068 18.0787 0.337969 16.8971C0.18382 15.7488 0.183112 14.2816 0.183112 12.4275L0.184526 9.74618C0.184526 8.68552 0.184526 7.83558 0.250287 7.13908C0.32029 6.41854 0.46454 5.80618 0.784152 5.22918C1.10447 4.65148 1.54712 4.20459 2.12129 3.76477C2.67637 3.33838 3.39762 2.88866 4.29706 2.3258L5.43055 1.61657C6.1822 1.14776 6.79456 0.764511 7.32772 0.504295C7.88563 0.232059 8.41313 0.0623539 9.00144 0.0623539C9.58975 0.0623539 10.1187 0.23206 10.6745 0.505003C11.2083 0.764511 11.8207 1.14776 12.5716 1.61728L13.7051 2.32651C14.606 2.88795 15.3258 3.33909 15.8816 3.76476M10.0571 7.39293C10.0571 7.06136 9.92544 6.74338 9.69098 6.50893C9.45653 6.27448 9.13855 6.14276 8.80699 6.14276C8.47542 6.14276 8.15744 6.27448 7.92299 6.50893C7.68853 6.74338 7.55682 7.06136 7.55682 7.39293C7.55682 7.5571 7.58916 7.71967 7.65198 7.87135C7.71481 8.02302 7.8069 8.16084 7.92299 8.27693C8.03907 8.39302 8.17689 8.4851 8.32857 8.54793C8.48024 8.61076 8.64281 8.64309 8.80699 8.64309C8.97116 8.64309 9.13373 8.61076 9.2854 8.54793C9.43708 8.4851 9.5749 8.39302 9.69099 8.27693C9.80707 8.16084 9.89916 8.02302 9.96199 7.87135C10.0248 7.71967 10.0571 7.5571 10.0571 7.39293ZM8.80628 4.64299C9.5357 4.6429 10.2353 4.93257 10.7511 5.44828C11.267 5.964 11.5568 6.66351 11.5569 7.39293C11.557 8.12235 11.2673 8.82194 10.7516 9.33778C10.2359 9.85363 9.53641 10.1435 8.80698 10.1436C8.07747 10.1436 7.37783 9.85377 6.86199 9.33793C6.34614 8.82208 6.05634 8.12245 6.05634 7.39293C6.05634 6.66341 6.34614 5.96378 6.86199 5.44793C7.37783 4.93208 8.07676 4.64299 8.80628 4.64299ZM9.62581 12.7754C9.4561 12.6182 9.23128 12.5341 9.00003 12.5414C8.45131 12.5414 8.24978 12.8871 8.24978 13.0413C8.25049 13.1962 8.45272 13.5412 9.00003 13.5412C10.1088 13.5412 11.25 14.3148 11.25 15.5409C11.25 16.4927 10.5634 17.1722 9.73754 17.4282C9.70572 17.6002 9.61477 17.7557 9.48042 17.8677C9.34607 17.9798 9.17678 18.0414 9.00185 18.0418C8.82691 18.0422 8.65732 17.9814 8.52244 17.87C8.38756 17.7586 8.29586 17.6036 8.26322 17.4317C7.77189 17.2884 7.34584 16.9783 7.05831 16.5549C7.00408 16.4726 6.96659 16.3805 6.94797 16.2837C6.92935 16.187 6.92998 16.0875 6.94981 15.991C6.96964 15.8944 7.00828 15.8028 7.06354 15.7212C7.1188 15.6396 7.18958 15.5697 7.27186 15.5155C7.35413 15.4612 7.44628 15.4237 7.54304 15.4051C7.6398 15.3865 7.73929 15.3871 7.83581 15.407C7.93233 15.4268 8.024 15.4654 8.10558 15.5207C8.18717 15.576 8.25707 15.6467 8.3113 15.729C8.4103 15.8803 8.65284 16.0423 9.00003 16.0416C9.54803 16.0408 9.75027 15.6958 9.75027 15.5416C9.74956 15.3868 9.54733 15.0417 9.00003 15.0417C7.89128 15.0417 6.75001 14.2681 6.75001 13.042C6.75001 12.0902 7.43661 11.4107 8.26251 11.1547C8.29433 10.9827 8.38528 10.8272 8.51963 10.7152C8.65398 10.6031 8.82327 10.5416 8.9982 10.5412C9.17314 10.5407 9.34273 10.6015 9.47761 10.7129C9.61249 10.8243 9.70419 10.9793 9.73683 11.1512C10.1052 11.2636 10.4369 11.4595 10.6971 11.7254C10.8364 11.8673 10.9137 12.0588 10.9118 12.2578C10.9099 12.4567 10.8291 12.6467 10.6872 12.786C10.5452 12.9254 10.3537 13.0026 10.1548 13.0008C9.95589 12.9989 9.76515 12.9174 9.62581 12.7754Z" fill="var(--accent-color)"/>
+                        </svg>
+                        
+
+                </div>
+                <h3 class="item-why__title">Easy to find</h3>
+                <p class="item-why__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+            </div>
+            <div class="why__item item-why" data-aos="flip-left">
+                <div class="item-why__img">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 0C16.1217 0 18.1566 0.842855 19.6569 2.34315C21.1571 3.84344 22 5.87827 22 8C22 10.1217 21.1571 12.1566 19.6569 13.6569C18.1566 15.1571 16.1217 16 14 16C11.8783 16 9.84344 15.1571 8.34315 13.6569C6.84285 12.1566 6 10.1217 6 8C6 5.87827 6.84285 3.84344 8.34315 2.34315C9.84344 0.842855 11.8783 0 14 0ZM14 2C12.4087 2 10.8826 2.63214 9.75736 3.75736C8.63214 4.88258 8 6.4087 8 8C8 9.5913 8.63214 11.1174 9.75736 12.2426C10.8826 13.3679 12.4087 14 14 14C15.5913 14 17.1174 13.3679 18.2426 12.2426C19.3679 11.1174 20 9.5913 20 8C20 6.4087 19.3679 4.88258 18.2426 3.75736C17.1174 2.63214 15.5913 2 14 2ZM13 4H14.5V7.78L16.83 10.11L15.77 11.17L13 8.4V4ZM1 14C0.734784 14 0.48043 13.8946 0.292893 13.7071C0.105357 13.5196 0 13.2652 0 13C0 12.7348 0.105357 12.4804 0.292893 12.2929C0.48043 12.1054 0.734784 12 1 12H4.83C5.14 12.71 5.54 13.38 6 14H1ZM2 9C1.73478 9 1.48043 8.89464 1.29289 8.70711C1.10536 8.51957 1 8.26522 1 8C1 7.73478 1.10536 7.48043 1.29289 7.29289C1.48043 7.10536 1.73478 7 2 7H4.05L4 8L4.05 9H2ZM3 4C2.73478 4 2.48043 3.89464 2.29289 3.70711C2.10536 3.51957 2 3.26522 2 3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H6C5.54 2.62 5.14 3.29 4.83 4H3Z" fill="var(--accent-color)"/>
+                        </svg>
+                        
+                </div>
+                <h3 class="item-why__title">Easy to find</h3>
+                <p class="item-why__text text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <svg class="reviews-deco" width="1226.249023" height="1137.432861" viewBox="0 0 1226.25 1137.43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <g opacity="0.470000">
+                <path id="Rectangle 93" d="M1196.25 576.257L699.965 1134.48L160.742 561.175L687.026 2.95435L1196.25 576.257Z" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="4.000000"/>
+            </g>
+            <g opacity="0.580000">
+                <path id="Rectangle 94" d="M1115.25 576.257L618.965 1134.48L79.7422 561.175L606.026 2.95435L1115.25 576.257Z" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="4.000000"/>
+            </g>
+            <g opacity="0.900000">
+                <path id="Rectangle 95" d="M1038.25 576.257L541.965 1134.48L2.74219 561.175L529.026 2.95435L1038.25 576.257Z" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="4.000000"/>
+            </g>
+        </svg>
+        
+        
+        <div class="reviews__container">
+            <div class="reviews__quotes">“</div>
+            <div class="swiper slider-reviews">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <div class="slider-reviews__info">
+                        <div class="slider-reviews__name">Elena Pravo</div>
+                        <div class="slider-reviews__job">Ceo, Upstate</div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <p class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <div class="slider-reviews__info">
+                        <div class="slider-reviews__name">Elena Pravo</div>
+                        <div class="slider-reviews__job">Ceo, Upstate</div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <p class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <div class="slider-reviews__info">
+                        <div class="slider-reviews__name">Elena Pravo</div>
+                        <div class="slider-reviews__job">Ceo, Upstate</div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <p class="slider-reviews__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <div class="slider-reviews__info">
+                        <div class="slider-reviews__name">Elena Pravo</div>
+                        <div class="slider-reviews__job">Ceo, Upstate</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-reviews__btns">
+                    <div class="slider-reviews__btn slider-reviews-prev swiper-button-prev">
+                        <svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z">
+                        </svg>
+                    </div>
+                    <div class="slider-reviews__btn slider-reviews-next swiper-button-next">
+                        <svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z">
+                        </svg> 
+                    </div>
+            </div>  
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__container">
+            <div class="gallery__box">
+                <div class="gallery__item swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/gallery/1.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/2.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/1.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/2.jpg" alt="Images">
+                           </div>
+                    </div>
+                </div>
+                <div class="gallery__item swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/gallery/2.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/1.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/2.jpg" alt="Images">
+                           </div>
+                           <div class="swiper-slide">
+                            <img src="./img/gallery/1.jpg" alt="Images">
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__info">
+                <h2 class="gallery__title title">We help people to find homes</h2>
+                <p class="gallery__text text">Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa consectetur. Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+                <a class="gallery__link" href="#!">Get in touch</a>
+            </div>
+        </div>
+    </section>
+    <section class="begin">
+        <svg class="begin-rect" width="134.000000" height="182.000000" viewBox="0 0 134 182" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <rect id="Rectangle 100" x="3.500000" y="3.500000" width="83.000000" height="95.000000" fill="var(--accent-color)" fill-opacity="1.000000"/>
+            <rect id="Rectangle 100" x="3.500000" y="3.500000" width="83.000000" height="95.000000" stroke="#121B25" stroke-opacity="1.000000" stroke-width="7.000000"/>
+            <rect id="Rectangle 101" x="25.500000" y="43.500000" width="83.000000" height="95.000000" fill="var(--accent-color)" fill-opacity="1.000000"/>
+            <rect id="Rectangle 101" x="25.500000" y="43.500000" width="83.000000" height="95.000000" stroke="#121B25" stroke-opacity="1.000000" stroke-width="7.000000"/>
+            <rect id="Rectangle 102" x="47.500000" y="83.500000" width="83.000000" height="95.000000" fill="var(--accent-color)" fill-opacity="1.000000"/>
+            <rect id="Rectangle 102" x="47.500000" y="83.500000" width="83.000000" height="95.000000" stroke="#121B25" stroke-opacity="1.000000" stroke-width="7.000000"/>
+        </svg>
+        <svg class="begin-wave" width="499.813721" height="615.731445" viewBox="0 0 499.814 615.731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <g opacity="0.580000">
+                <path id="Vector 2" d="M44.354 47.4575C145.332 71.978 368.3 209.907 452.354 565.458" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="3.000000"/>
+            </g>
+            <g opacity="0.470000">
+                <path id="Vector 3" d="M90.354 1.45752C191.332 25.978 414.3 163.907 498.354 519.458" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="3.000000"/>
+            </g>
+            <g opacity="0.900000">
+                <path id="Vector 2" d="M0.354004 97.4575C101.332 121.978 337.854 281.458 399.854 615.458" stroke="var(--accent-color)" stroke-opacity="1.000000" stroke-width="3.000000"/>
+            </g>
+        </svg>
+        
+        
+        
+        <div class="begin__container">
+                <h2 class="begin__title title">Let’s simply begin with rentiz.</h2>
+                <div class="begin__info">
+                    <p class="begin__text text">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+                    <a class="begin__link" href="#!">Get Started</a>
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer class="footer">
+       <div class="footer__main">
+        <div class="footer__container">
+        <div class="footer__block">
+            <a class="footer__link" href="#!">
+                <img src="./img/header-logo.svg" alt="LogoFooter">
+            </a>
+            <p class="footer__text text">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue.</p>
+            <div class="footer__socials">
+                <a class="footer__social" href="#!">
+                    <svg width="19.998047" height="19.877930" viewBox="0 0 19.998 19.8779" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="brand / facebook" d="M9.99902 0C4.47705 0 0 4.47705 0 9.99902C0 14.9888 3.65601 19.125 8.43701 19.8779L8.43701 12.8901L5.89697 12.8901L5.89697 9.99902L8.43701 9.99902L8.43701 7.7959C8.43701 5.28809 9.92993 3.90479 12.2129 3.90479C13.3069 3.90479 14.4529 4.1001 14.4529 4.1001L14.4529 6.55908L13.189 6.55908C11.949 6.55908 11.561 7.33105 11.561 8.12207L11.561 9.99707L14.332 9.99707L13.8889 12.8882L11.561 12.8882L11.561 19.876C16.342 19.127 19.998 14.9902 19.998 9.99902C19.998 4.47705 15.521 0 9.99902 0Z" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </svg>
+                    
+                    
+                </a>
+                <a class="footer__social" href="#!">
+                    <svg width="18.008057" height="18.036133" viewBox="0 0 18.0081 18.0361" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs/>
+                        <path id="brand / instagram" d="M14.8979 0.474121C16.1069 0.940918 17.062 1.89697 17.531 3.10596C17.7991 3.81396 17.939 4.56494 17.9519 5.32324C18.0081 6.27979 18.0081 6.58984 18.0081 9.0332C18.0081 11.4761 17.9951 11.7808 17.9519 12.7432C17.937 13.4912 17.7959 14.229 17.533 14.9292C17.064 16.1382 16.1089 17.0928 14.8999 17.562C14.2 17.8242 13.4609 17.9658 12.7141 17.981C11.759 18.0361 11.446 18.0361 9.00391 18.0361C6.56201 18.0361 6.25708 18.0229 5.29395 17.981C4.54395 17.957 3.80493 17.8032 3.10889 17.5308C1.89893 17.063 0.944092 16.1069 0.475098 14.8989C0.211914 14.1982 0.0710449 13.46 0.0559082 12.7119C0 11.7549 0 11.4438 0 9.00195C0 6.55908 0.0129395 6.25391 0.0559082 5.29199C0.0710449 4.54395 0.211914 3.80615 0.475098 3.10596C0.943115 1.89697 1.89795 0.940918 3.10791 0.474121C3.80688 0.209961 4.5459 0.0688477 5.29199 0.0541992C6.24707 0 6.56006 0 9.00195 0C11.4441 0 11.749 0.012207 12.7119 0.0541992C13.46 0.0698242 14.199 0.210938 14.8979 0.474121ZM16.002 14.3262C16.2019 13.7852 16.3059 13.2148 16.313 12.6392L16.324 12.6392C16.3669 11.6831 16.3669 11.4209 16.3669 8.98486C16.3669 6.54785 16.356 6.28076 16.313 5.33008C16.304 4.75977 16.198 4.19482 16.002 3.66113C15.697 2.87402 15.0759 2.25195 14.29 1.94922C13.7549 1.75 13.1909 1.64502 12.6201 1.63818C11.6531 1.58301 11.4031 1.58301 8.96606 1.58301C6.52905 1.58301 6.26196 1.59521 5.31104 1.63818C4.74194 1.646 4.17603 1.75098 3.64209 1.94922C2.85303 2.25098 2.22803 2.87207 1.9231 3.66113C1.7229 4.20215 1.6189 4.77197 1.61206 5.34814C1.55908 6.31689 1.55908 6.56592 1.55908 9.00293C1.55908 11.439 1.56909 11.707 1.61206 12.6572C1.62109 13.2271 1.72705 13.792 1.9231 14.3262C2.22803 15.1138 2.85303 15.7358 3.64209 16.0371C4.17603 16.2358 4.74194 16.3408 5.31104 16.3481C6.27905 16.4028 6.52808 16.4028 8.96606 16.4028C11.4021 16.4028 11.6699 16.3921 12.6201 16.3481C13.1909 16.3398 13.7549 16.2358 14.29 16.0371C15.0759 15.7349 15.697 15.1128 16.002 14.3262ZM13.804 5.27979C14.3994 5.27979 14.8821 4.79736 14.8821 4.20215C14.8821 3.60645 14.3994 3.12402 13.804 3.12402C13.2087 3.12402 12.7261 3.60645 12.7261 4.20215C12.7261 4.79736 13.2087 5.27979 13.804 5.27979ZM8.99707 4.37207C6.44312 4.37207 4.37402 6.44189 4.37402 8.99512C4.37402 11.5488 6.44312 13.6191 8.99707 13.6191C11.5491 13.6191 13.6201 11.5488 13.6201 8.99512C13.6201 6.44189 11.5491 4.37207 8.99707 4.37207ZM8.99707 11.999C7.33789 11.999 5.99292 10.6538 5.99292 8.99609C5.99292 7.33691 7.33789 5.99316 8.99707 5.99316C10.656 5.99316 11.999 7.33691 11.999 8.99609C11.999 10.6538 10.656 11.999 8.99707 11.999Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                    
+                </a>
+                <a class="footer__social" href="#!">
+                    <svg width="20.918457" height="17.000000" viewBox="0 0 20.9185 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="brand / Twitter" d="M20.9185 2.01221C20.1489 2.35352 19.3215 2.58447 18.4536 2.68799C19.3396 2.15723 20.02 1.31592 20.3406 0.313965C19.5112 0.805664 18.5928 1.1626 17.6152 1.35498C16.8325 0.520996 15.717 0 14.4827 0C12.1125 0 10.1909 1.92139 10.1909 4.2915C10.1909 4.62793 10.229 4.95557 10.302 5.26953C6.73535 5.09082 3.573 3.38184 1.4563 0.785645C1.08691 1.41943 0.875244 2.15674 0.875244 2.94287C0.875244 4.43213 1.63281 5.74561 2.78442 6.51514C2.08105 6.49268 1.41919 6.2998 0.840576 5.97852C0.840332 5.99658 0.840332 6.01416 0.840332 6.03223C0.840332 8.11182 2.31958 9.84619 4.28271 10.2407C3.92261 10.3389 3.54346 10.3911 3.1521 10.3911C2.87573 10.3911 2.60669 10.3643 2.34473 10.314C2.89087 12.019 4.47583 13.2598 6.35376 13.2944C4.88501 14.4458 3.03442 15.1318 1.02368 15.1318C0.677246 15.1318 0.335693 15.1113 0 15.0718C1.89917 16.2896 4.15503 17 6.57861 17C14.4727 17 18.7893 10.4604 18.7893 4.78906C18.7893 4.60303 18.7852 4.41797 18.7769 4.23389C19.6155 3.62891 20.343 2.87305 20.9185 2.01221Z"  fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </svg>
+                    
+                </a>
+                <a class="footer__social" href="#!">
+                    <svg width="20.014160" height="14.012207" viewBox="0 0 20.0142 14.0122" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="brand / youtube" d="M19.6069 2.20312C19.377 1.34521 18.7019 0.667969 17.845 0.437012C16.2791 0.00683594 10.0139 0 10.0139 0C10.0139 0 3.75 -0.00683594 2.18311 0.403809C1.34302 0.632812 0.648926 1.3252 0.416992 2.18213C0.00390625 3.74805 0 6.99609 0 6.99609C0 6.99609 -0.00390625 10.2598 0.406006 11.8101C0.635986 12.667 1.31104 13.3442 2.16895 13.5752C3.75098 14.0049 9.99902 14.0122 9.99902 14.0122C9.99902 14.0122 16.2639 14.019 17.8301 13.6089C18.686 13.3789 19.364 12.7031 19.5969 11.8462C20.011 10.2812 20.0139 7.03418 20.0139 7.03418C20.0139 7.03418 20.0339 3.76904 19.6069 2.20312ZM8.01001 10.0049L8.01489 4.00488L13.2219 7.00977L8.01001 10.0049Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                    
+                </a>
+            </div>
+        </div>
+        <div class="footer__block links-footer">
+            <div class="links-footer__header">Project</div>
+            <ul class="links-footer__list">
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Houses 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Rooms 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Flats 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Appartments
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__block links-footer">
+            <div class="links-footer__header">Company</div>
+            <ul class="links-footer__list">
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        How we work ?
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Capital
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Security 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__block links-footer">
+            <div class="links-footer__header">Movement</div>
+            <ul class="links-footer__list">
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Who are we 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Support us
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__block links-footer">
+            <div class="links-footer__header">Help</div>
+            <ul class="links-footer__list">
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Privacy 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Condition
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        Blog 
+                    </a>
+                </li>
+                <li class="links-footer__item">
+                    <a class="links-footer__link" href="#!">
+                        FAQs
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="copyright__container">
+            <span class="text copyright__text">Copyright ©TemplatesJungle. 2022. All right reserved</span>
+            <span class="text copyright__text">Design by: Designer</span>
+        </div>
+</div>
+   </footer>
+
+
+</body>
+</html>
